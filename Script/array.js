@@ -18,16 +18,3 @@ var museArray = [
   mus15 = {title: "", artist: "", album: "NA", release: "", mood:"placeholder"},
   mus16 = {title: "", artist: "", album: "NA", release: "", mood:"placeholder"}
 ];
-
-for(i = 0; i < museArray.length; i++){
-  displayTable(i);
-}
-displayTable() {
-var currentTitle = "mus" + i;
-var newTable = document.createElement("TD")
-var tableRow = "<tr> <td>" + currentTitle.title + "</td> " +
-"<td>" + currentTitle.artist + "</td> " +
-"<td>" + currentTitle.album + "</td> " +
-"<td>" + currentTitle.release + "</td> " +
-"<td>" + currentTitle.mood + "</td> </tr>";
-}
