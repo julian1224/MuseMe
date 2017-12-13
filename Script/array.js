@@ -1,39 +1,33 @@
 var museArray = [
-  mus0 = {title: "Re-Hash", artist: "Gorillaz", album: "Gorillaz", release: "2001"},
+  mus0 = {title: "Re-Hash", artist: "Gorillaz", album: "Gorillaz", release: "2001", mood:"placeholder"},
   mus1 = {title: "5/4", artist: "Gorillaz", album: "Gorillaz", release: "2001"},
-  mus2 = {title: "Tomorrow Comes Today", artist: "Gorillaz", album: "Gorillaz", release: "2001"},
-  mus3 = {title: "New Genious (Brother)", artist: "Gorillaz", album: "Gorillaz", release: "2001"},
-  mus4 = {title: "Clint Eastwood", artist: "Gorillaz", album: "Gorillaz", release: "2001"},
-  mus5 = {title: "Man Research (Clapper)", artist: "Gorillaz", album: "Gorillaz", release: "2001"},
+  mus2 = {title: "Tomorrow Comes Today", artist: "Gorillaz", album: "Gorillaz", release: "2001", mood:"placeholder"},
+  mus3 = {title: "New Genious (Brother)", artist: "Gorillaz", album: "Gorillaz", release: "2001", mood:"placeholder"},
+  mus4 = {title: "Clint Eastwood", artist: "Gorillaz", album: "Gorillaz", release: "2001", mood:"placeholder"},
+  mus5 = {title: "Man Research (Clapper)", artist: "Gorillaz", album: "Gorillaz", release: "2001", mood:"placeholder"},
   mus6 = {title: "Punk", artist: "Gorillaz", album: "Gorillaz", release: "2001"},
-  mus7 = {title: "Sound Check (Gravity)", artist: "Gorillaz", album: "Gorillaz", release: "2001"},
-  mus8 = {title: "Double Bass", artist: "Gorillaz", album: "Gorillaz", release: "2001"},
-  mus9 = {title: "Rock the House", artist: "Gorillaz", album: "Gorillaz", release: "2001"},
-  mus10 = {title: "19-2000", artist: "Gorillaz", album: "Gorillaz", release: "2001"},
-  mus11 = {title: "Latin Simone (¿Qué Pasa Contigo?)", artist: "Gorillaz", album: "Gorillaz", release: "2001"},
-  mus12 = {title: "Starshine", artist: "Gorillaz", album: "Gorillaz", release: "2001"},
-  mus13 = {title: "Slow Country", artist: "Gorillaz", album: "Gorillaz", release: "2001"},
-  mus14 = {title: "M1 A1", artist: "Gorillaz", album: "Gorillaz", release: "2001"},
+  mus7 = {title: "Sound Check (Gravity)", artist: "Gorillaz", album: "Gorillaz", release: "2001", mood:"placeholder"},
+  mus8 = {title: "Double Bass", artist: "Gorillaz", album: "Gorillaz", release: "2001", mood:"placeholder"},
+  mus9 = {title: "Rock the House", artist: "Gorillaz", album: "Gorillaz", release: "2001", mood:"placeholder"},
+  mus10 = {title: "19-2000", artist: "Gorillaz", album: "Gorillaz", release: "2001", mood:"placeholder"},
+  mus11 = {title: "Latin Simone (¿Qué Pasa Contigo?)", artist: "Gorillaz", album: "Gorillaz", release: "2001", mood:"placeholder"},
+  mus12 = {title: "Starshine", artist: "Gorillaz", album: "Gorillaz", release: "2001", mood:"placeholder"},
+  mus13 = {title: "Slow Country", artist: "Gorillaz", album: "Gorillaz", release: "2001", mood:"placeholder"},
+  mus14 = {title: "M1 A1", artist: "Gorillaz", album: "Gorillaz", release: "2001", mood:"placeholder"},
 
-  mus15 = {title: "", artist: "", album: "NA", release: ""},
-  mus16 = {title: "", artist: "", album: "NA", release: ""}
+  mus15 = {title: "", artist: "", album: "NA", release: "", mood:"placeholder"},
+  mus16 = {title: "", artist: "", album: "NA", release: "", mood:"placeholder"}
 ];
 
-function writeToFile()
-{
-var fso = new ActiveXObject("Scripting.FileSystemObject");
-
-var s = fso.CreateTextFile( .text, true);
-
-for(i = 0; i < museArray.length; i++) {
-  s.WriteLine(museArray[i].title + museArray[i].artist + museArray[i].album + museArray[i].release );
+for(i = 0; i < museArray.length; i++){
+  displayTable(i);
 }
-// <%String s1="Hai";%>
-//
-// s.WriteLine('<%=s1%>');
-// s.WriteLine('***********************');
-// s.WriteLine('<%=s1%>');
-// s.WriteLine('<%=s1%>');
-
-s.Close();
+displayTable() {
+var currentTitle = "mus" + i;
+var newTable = document.createElement("TD")
+var tableRow = "<tr> <td>" + currentTitle.title + "</td> " +
+"<td>" + currentTitle.artist + "</td> " +
+"<td>" + currentTitle.album + "</td> " +
+"<td>" + currentTitle.release + "</td> " +
+"<td>" + currentTitle.mood + "</td> </tr>";
 }
