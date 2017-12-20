@@ -14,7 +14,9 @@ var museArray = [
   mus12 = {title: "Starshine", artist: "Gorillaz", album: "Gorillaz", release: "2001", mood:"placeholder"},
   mus13 = {title: "Slow Country", artist: "Gorillaz", album: "Gorillaz", release: "2001", mood:"placeholder"},
   mus14 = {title: "M1 A1", artist: "Gorillaz", album: "Gorillaz", release: "2001", mood:"placeholder"},
-
-  mus15 = {title: "", artist: "", album: "NA", release: "", mood:"placeholder"},
-  mus16 = {title: "", artist: "", album: "NA", release: "", mood:"placeholder"}
 ];
+
+
+
+  // mus15 = {title: "", artist: "", album: "NA", release: "", mood:"placeholder"},
+  // mus16 = {title: "", artist: "", album: "NA", release: "", mood:"placeholder"}
