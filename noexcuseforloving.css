@@ -1,4 +1,15 @@
 table {
   border-style: double;
   border-color: blue;
+  padding: none;
+}
+th {
+  border-style: double;
+  border-color: blue;
+  background-color: lightblue;
+}
+td {
+  border-style: double;
+  border-color: black;
+  padding: 3px;
 }

@@ -16,7 +16,8 @@ var museArray = [
   mus14 = {title: "M1 A1", artist: "Gorillaz", album: "Gorillaz", release: "2001", mood:"placeholder"},
 ];
 
-
+// Moods: Amused, Blissful, Calm, Cheerful, Dreamy, Energetic, Excited, Happy, Loving, Mellow, Peaceful
+// Mooods: Gloomy, Melancholic, Restless, Sad, Weird
 
   // mus15 = {title: "", artist: "", album: "NA", release: "", mood:"placeholder"},
   // mus16 = {title: "", artist: "", album: "NA", release: "", mood:"placeholder"}
